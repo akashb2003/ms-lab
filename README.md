@@ -1,105 +1,105 @@
-# crud
+# Demo Video Link: [Watch Here](https://drive.google.com/file/d/1mfMGn62flYE-QgX_TSpyN_Ov0helJjku/view?usp=sharing)
 
-CRUD Application using React and Spring Boot
+<video width="600" controls>
+  <source src="https://drive.google.com/file/d/1mfMGn62flYE-QgX_TSpyN_Ov0helJjku/view?usp=sharing" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
 
-This project is a simple CRUD (Create, Read, Update, Delete) application built with React for the frontend and Spring Boot for the backend. It allows you to manage a collection of items.
+# Expense Tracker
 
-=> Table of Contents
+This project is an **Expense Tracker** application that allows users to manage their expenses by adding, viewing, editing, and deleting items. The frontend is built using **React** and the backend is developed using **Spring Boot**.
 
-* Getting Started
-* Prerequisites
-* Installation
-* Running the Application
-* Usage
-* Project Structure
-* Technologies Used
-* Contributing
-* License
+## Features
 
-=>Getting Started
+- Add an expense with details such as item name, amount, and category.
+- View the list of all expenses.
+- Edit existing expenses.
+- Delete expenses from the list.
+- Intuitive user interface with dynamic data handling.
 
+## Getting Started
 
-* Node.js and npm installed.
-* Java and Maven for Spring Boot.
-* A compatible database (e.g., MySQL, PostgreSQL) with schema created.
-  
-=> Installation
- 
--> Clone the repository:
+### Prerequisites
 
-git clone https://github.com/your-username/your-crud-app.git
+- Node.js and npm installed for the React frontend.
+- Java and Maven installed for the Spring Boot backend.
+- A compatible database (e.g., MySQL, PostgreSQL) with schema created for storing expenses.
 
--> Install frontend dependencies:
+### Installation
 
-cd client
+#### Clone the Repository
+```bash
+git clone https://github.com/akashb2003/ms-lab
+```
+
+#### Setup Frontend
+```bash
+cd expense-tracker/frontend
 npm install
+```
 
--> Configure the backend:
+#### Setup Backend
+1. Navigate to the backend directory:
+   ```bash
+   cd expense-tracker/backend
+   ```
+2. Create an `application.properties` file in the `src/main/resources` directory and configure your database connection:
+   ```properties
+   spring.datasource.url=jdbc:mysql://localhost:3306/your_database
+   spring.datasource.username=your_username
+   spring.datasource.password=your_password
+   spring.jpa.hibernate.ddl-auto=update
+   ```
+3. Build the Spring Boot project:
+   ```bash
+   mvn clean install
+   ```
 
-* Create a application.properties file in the src/main/resources directory of the Spring Boot project.
-* Configure your database connection in application.properties. For example:
+### Running the Application
 
--> properties
-
-spring.datasource.url=jdbc:mysql://localhost:3306/your_database
-spring.datasource.username=your_username
-spring.datasource.password=your_password
-
-Specify other configurations like server port and logging as needed.
-
--> Build the Spring Boot project:
-
-cd server
-mvn clean install
-Running the Application
-
--> Start the Spring Boot server:
-
-cd server
+#### Start the Backend Server
+```bash
+cd expense-tracker/backend
 mvn spring-boot:run
+```
+The backend server will start at [http://localhost:8080](http://localhost:8080).
 
-The backend server should now be running on http://localhost:8080.
-
--> Start the React frontend:
-
-cd client
+#### Start the Frontend
+```bash
+cd expense-tracker/frontend
 npm start
+```
+The React development server will start at [http://localhost:3000](http://localhost:3000).
 
-The React development server should start and open the application in your default web browser at http://localhost:3000.
+## Usage
 
-=> Usage
+1. **Add Expense**: Use the form on the app's homepage to add a new expense by specifying the item name, amount, and category.
+2. **View Expenses**: View a list of all added expenses.
+3. **Edit Expense**: Modify details of an existing expense.
+4. **Delete Expense**: Remove an expense from the list.
 
-Access the CRUD application through the web browser.
-Perform CRUD operations on the items.
-Create, read, update, and delete items in the database.
+## Project Structure
 
-=> Project Structure
+- **frontend/**: Contains the React code for the user interface.
+- **backend/**: Contains the Spring Boot code for handling API requests and managing the database.
+- **database/**: Contains database schema and migration scripts (if any).
 
--> The project is structured as follows:
+## Technologies Used
 
-client/: Contains the React frontend code.
-server/: Contains the Spring Boot backend code.
-database/: Contains database schema and migration scripts.
+- **Frontend**: React, HTML5, CSS3, JavaScript
+- **Backend**: Spring Boot, Java
+- **Database**: MySQL (or any preferred relational database)
+- **Build Tools**: npm, Maven
 
-=> Technologies Used
+## Learn More
 
-* React
-* Spring Boot
-* Java
-* MySQL (or your preferred database)
-* npm
-* Maven
-  
-=> Contributing
+To learn React, check out the [React documentation](https://reactjs.org/). 
+To learn Spring Boot, refer to the [Spring Boot documentation](https://spring.io/projects/spring-boot).
+
+## Contribution
 
 Feel free to contribute to this project by opening issues or pull requests. Your contributions are welcome!
 
-=> License
+## License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
-
-Feel free to customize this README file to include specific details about your CRUD application, such as project features, API documentation, or any other relevant information. It's essential to provide clear and concise instructions to help users understand and use your application effectively.
-
-
-
-
