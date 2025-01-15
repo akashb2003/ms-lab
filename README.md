@@ -1,7 +1,7 @@
 # Demo Video Link: [Watch Here](https://drive.google.com/file/d/1mfMGn62flYE-QgX_TSpyN_Ov0helJjku/view?usp=sharing)
 
 <video width="600" controls>
-  <source src="https://drive.google.com/file/d/1mfMGn62flYE-QgX_TSpyN_Ov0helJjku/view?usp=sharing" type="video/mp4">
+  <source src="https://github.com/akashb2003/ms-lab/blob/main/MS%20Project.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video>
 
